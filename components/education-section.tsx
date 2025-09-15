@@ -48,10 +48,10 @@ const education: Education[] = [
     duration: "2017 - 2021",
     location: "Chennai, IND",
     achievements: [
-      "Magna Cum Laude graduate",
-      "President of Computer Science Student Association",
-      "Internship at Wayne Enterprises (Summer 2014)",
-      "Dean's List for 6 consecutive semesters",
+      "Publication in IEEE Xpore 2021",
+      "Perfect GPA in the final semester",
+      "Extensive research into the cold-start problems in Recommendation Systems",
+      "[This achievement was redacted due to classification reasons]",
     ],
     relevantCourses: [
       "Data Structures",
