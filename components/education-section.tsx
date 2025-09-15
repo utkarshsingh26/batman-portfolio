@@ -24,12 +24,11 @@ const education: Education[] = [
     field: "Computer Science",
     duration: "2023 - 2025",
     location: "Tempe, AZ",
-    gpa: "3.9/4.0",
     achievements: [
-      "Summa Cum Laude graduate with highest honors",
-      "Research published in top-tier AI conference (ICML 2017)",
-      "Teaching Assistant for Advanced Algorithms course",
-      "Winner of University Hackathon 2016 & 2017",
+      "Grad Teaching Assistant for grad level Data Viz class",
+      "Top 1% performer in the grad level Distributed Databases class",
+      "Accepted Publication in HICSS 2026",
+      "Honorary Award in IEEE PacificVis 2025",
     ],
     relevantCourses: [
       "Data Visualization",
@@ -48,7 +47,6 @@ const education: Education[] = [
     field: "Computer Science",
     duration: "2017 - 2021",
     location: "Chennai, IND",
-    gpa: "3.8/4.0",
     achievements: [
       "Magna Cum Laude graduate",
       "President of Computer Science Student Association",
