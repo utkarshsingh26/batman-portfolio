@@ -2,11 +2,19 @@
 
 import { Button } from "@/components/ui/button"
 
+// const BatSymbolSmall = () => (
+//   <svg width="24" height="24" viewBox="0 0 100 100" className="fill-primary">
+//     <path d="M50 15c-12 0-22 4-30 12-4 4-7 10-7 16 0 3 1 6 3 8l12-4c3-1 6-2 9-2s6 1 9 2l12 4c2-2 3-5 3-8 0-6-3-12-7-16-8-8-18-12-30-12zm-35 35c-4 3-7 8-7 13 0 4 2 8 4 11l18-7c4-2 9-3 15-3s11 1 15 3l18 7c2-3 4-7 4-11 0-5-3-10-7-13l-12 4c-4 2-10 3-15 3s-11-1-15-3l-12-4z" />
+//   </svg>
+// )
+
 const BatSymbolSmall = () => (
-  <svg width="24" height="24" viewBox="0 0 100 100" className="fill-primary">
-    <path d="M50 15c-12 0-22 4-30 12-4 4-7 10-7 16 0 3 1 6 3 8l12-4c3-1 6-2 9-2s6 1 9 2l12 4c2-2 3-5 3-8 0-6-3-12-7-16-8-8-18-12-30-12zm-35 35c-4 3-7 8-7 13 0 4 2 8 4 11l18-7c4-2 9-3 15-3s11 1 15 3l18 7c2-3 4-7 4-11 0-5-3-10-7-13l-12 4c-4 2-10 3-15 3s-11-1-15-3l-12-4z" />
-  </svg>
-)
+  <img
+    src="/batman-logo.png"
+    alt="Batman Logo"
+    className="w-20 h-20 hover:scale-110 transition-transform duration-300"
+  />
+);
 
 export function Footer() {
   const scrollToTop = () => {

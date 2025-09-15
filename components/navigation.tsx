@@ -3,16 +3,24 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 
+// const BatSymbol = () => (
+//   <svg
+//     width="40"
+//     height="40"
+//     viewBox="0 0 100 100"
+//     className="fill-primary hover:fill-accent transition-colors duration-300 glow-animation"
+//   >
+//     <path d="M50 20c-8 0-15 3-20 8-3 3-5 7-5 11 0 2 1 4 2 5l8-3c2-1 4-1 6-1s4 0 6 1l8 3c1-1 2-3 2-5 0-4-2-8-5-11-5-5-12-8-20-8zm-25 25c-3 2-5 5-5 9 0 3 1 6 3 8l12-5c3-1 6-2 10-2s7 1 10 2l12 5c2-2 3-5 3-8 0-4-2-7-5-9l-8 3c-3 1-7 2-10 2s-7-1-10-2l-8-3z" />
+//   </svg>
+// )
+
 const BatSymbol = () => (
-  <svg
-    width="40"
-    height="40"
-    viewBox="0 0 100 100"
-    className="fill-primary hover:fill-accent transition-colors duration-300 glow-animation"
-  >
-    <path d="M50 20c-8 0-15 3-20 8-3 3-5 7-5 11 0 2 1 4 2 5l8-3c2-1 4-1 6-1s4 0 6 1l8 3c1-1 2-3 2-5 0-4-2-8-5-11-5-5-12-8-20-8zm-25 25c-3 2-5 5-5 9 0 3 1 6 3 8l12-5c3-1 6-2 10-2s7 1 10 2l12 5c2-2 3-5 3-8 0-4-2-7-5-9l-8 3c-3 1-7 2-10 2s-7-1-10-2l-8-3z" />
-  </svg>
-)
+  <img
+    src="/batman-logo.png"
+    alt="Batman Logo"
+    className="w-20 h-20 hover:scale-110 transition-transform duration-300"
+  />
+);
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
