@@ -232,7 +232,7 @@ export function ContactSection() {
             </a>
 
             <a
-              href="https://linkedin.com/in/utkarsh-singh"
+              href="https://www.linkedin.com/in/singhutkarsh98/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300"
@@ -248,7 +248,7 @@ export function ContactSection() {
             </a>
 
             <a
-              href="https://github.com/utkarsh-singh"
+              href="https://github.com/utkarshsingh26"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300"
