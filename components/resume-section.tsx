@@ -82,26 +82,53 @@ export function ResumeSection() {
   const [isDownloading, setIsDownloading] = useState(false)
   const { toast } = useToast()
 
+  // const handleDownload = async () => {
+  //   setIsDownloading(true)
+
+  //   // Simulate download process
+  //   await new Promise((resolve) => setTimeout(resolve, 2000))
+
+  //   toast({
+  //     title: "File Downloaded",
+  //     description: "Wayne File has been securely transmitted to your device.",
+  //   })
+
+  //   setIsDownloading(true)
+
+  //   const link = document.createElement("a");
+  //   link.href = "https://docs.google.com/document/d/1aBQDakMDfG5fNk6yEd95nyg7bnEASEYz/edit?usp=sharing&ouid=110832036897055898308&rtpof=true&sd=true";
+  //   link.download = "Utkarsh_Singh_Resume.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+
+  //   toast({
+  //     title: "File Downloaded",
+  //     description: "Wayne File has been securely transmitted to your device.",
+  //   })
+
+  //   setIsDownloading(false);
+
+  // }
   const handleDownload = async () => {
-    setIsDownloading(true)
+  setIsDownloading(true);
 
-    // Simulate download process
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+  // Simulate process
+  await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    toast({
-      title: "File Downloaded",
-      description: "Wayne File has been securely transmitted to your device.",
-    })
+  // Open in a new tab (PDF export link)
+  window.open(
+    "https://docs.google.com/document/d/1aBQDakMDfG5fNk6yEd95nyg7bnEASEYz/export?format=pdf",
+    "_blank"
+  );
 
-    setIsDownloading(false)
+  toast({
+    title: "File Opened",
+    description: "Wayne File has been securely opened in a new tab.",
+  });
 
-    // In a real implementation, this would trigger the actual download
-    // const link = document.createElement('a');
-    // link.href = '/path/to/resume.pdf';
-    // link.download = 'Utkarsh_Singh_Resume.pdf';
-    // link.click();
-  }
-
+  setIsDownloading(false);
+};
   return (
     <section id="resume" className="py-20 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
