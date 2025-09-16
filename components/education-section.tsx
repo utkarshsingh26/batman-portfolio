@@ -48,7 +48,7 @@ const education: Education[] = [
     duration: "2017 - 2021",
     location: "Chennai, IND",
     achievements: [
-      "Publication in IEEE Xpore 2021",
+      "Publication in IEEE Xplore 2021",
       "Perfect GPA in the final semester",
       "Extensive research into the cold-start problems in Recommendation Systems",
       "[This achievement was redacted due to classification reasons]",
