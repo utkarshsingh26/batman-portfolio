@@ -13,8 +13,8 @@ interface Project {
   description: string
   longDescription: string
   technologies: string[]
-  status: "Solved" | "Active" | "Classified"
-  difficulty: "High" | "Medium" | "Low"
+  status: "Solved" | "Active"
+  difficulty: "High" | "Medium" | "Low" | "Publication" | "Project"
   image: string
   githubUrl?: string
   liveUrl?: string
@@ -26,14 +26,14 @@ const projects: Project[] = [
   {
     id: "1",
     caseNumber: "CASE #001",
-    title: "E-Commerce Platform Overhaul",
+    title: "PatientLens: AI-Enabled Interactive Avatars for Patient Report Summarization and Visualization",
     description: "Modernized legacy e-commerce system with 300% performance improvement",
     longDescription:
       "Led the complete architectural redesign of a legacy e-commerce platform serving 100K+ users. Implemented microservices architecture, optimized database queries, and introduced modern React frontend with Next.js.",
     technologies: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "AWS", "Docker"],
     status: "Solved",
-    difficulty: "High",
-    image: "/modern-ecommerce-dashboard.png",
+    difficulty: "Publication",
+    image: "/hicss-2026.jpeg",
     githubUrl: "https://github.com/utkarsh/ecommerce-platform",
     liveUrl: "https://ecommerce-demo.utkarsh.dev",
     challenges: [
@@ -50,14 +50,14 @@ const projects: Project[] = [
   {
     id: "2",
     caseNumber: "CASE #002",
-    title: "Real-time Analytics Dashboard",
+    title: "The Story of Wagyu: Bringing Charm of Japan's Pride to the World",
     description: "Built scalable analytics platform processing 1M+ events daily",
     longDescription:
       "Developed a real-time analytics dashboard for a fintech startup, processing over 1 million events daily. Implemented event streaming, data visualization, and predictive analytics capabilities.",
     technologies: ["React", "Node.js", "MongoDB", "Socket.io", "D3.js", "Kafka"],
     status: "Solved",
-    difficulty: "High",
-    image: "/analytics-dashboard.png",
+    difficulty: "Publication",
+    image: "/pacific-vis-2025.png",
     githubUrl: "https://github.com/utkarsh/analytics-dashboard",
     liveUrl: "https://analytics.utkarsh.dev",
     challenges: [
@@ -74,14 +74,14 @@ const projects: Project[] = [
   {
     id: "3",
     caseNumber: "CASE #003",
-    title: "AI-Powered Code Review Tool",
+    title: "A Comprehensive Survey on Movie Recommendation Systems",
     description: "Machine learning system for automated code quality assessment",
     longDescription:
       "Developed an AI-powered code review tool that analyzes code quality, suggests improvements, and detects potential security vulnerabilities using machine learning algorithms.",
     technologies: ["Python", "TensorFlow", "FastAPI", "React", "PostgreSQL", "Docker"],
-    status: "Active",
-    difficulty: "High",
-    image: "/ai-code-analysis-interface.jpg",
+    status: "Solved",
+    difficulty: "Publication",
+    image: "/ieee-xplore.png",
     githubUrl: "https://github.com/utkarsh/ai-code-review",
     challenges: [
       "Training ML models on diverse codebases",
@@ -97,14 +97,14 @@ const projects: Project[] = [
   {
     id: "4",
     caseNumber: "CASE #004",
-    title: "Blockchain Voting System",
+    title: "SNAPE: Redifing Healthcare (Thesis)",
     description: "Secure, transparent voting platform using blockchain technology",
     longDescription:
       "Created a decentralized voting system ensuring transparency, security, and immutability. Implemented smart contracts for vote recording and verification mechanisms.",
     technologies: ["Solidity", "Web3.js", "React", "Node.js", "IPFS", "MetaMask"],
-    status: "Classified",
-    difficulty: "Medium",
-    image: "/blockchain-voting-interface.png",
+    status: "Solved",
+    difficulty: "Project",
+    image: "/doctors-office.jpg",
     githubUrl: "https://github.com/utkarsh/blockchain-voting",
     challenges: [
       "Ensuring vote privacy while maintaining transparency",
@@ -120,14 +120,14 @@ const projects: Project[] = [
   {
     id: "5",
     caseNumber: "CASE #005",
-    title: "IoT Device Management Platform",
+    title: "Premier League Real-Time Match Analytics Dashboard",
     description: "Centralized platform managing 10K+ IoT devices across multiple locations",
     longDescription:
       "Built a comprehensive IoT device management platform capable of monitoring, controlling, and updating thousands of connected devices in real-time.",
     technologies: ["Node.js", "MongoDB", "MQTT", "React", "AWS IoT", "InfluxDB"],
-    status: "Solved",
-    difficulty: "Medium",
-    image: "/iot-device-management-dashboard.jpg",
+    status: "Active",
+    difficulty: "Project",
+    image: "/premier-league.jpg",
     liveUrl: "https://iot-platform.utkarsh.dev",
     challenges: [
       "Managing diverse device types and protocols",
@@ -143,14 +143,14 @@ const projects: Project[] = [
   {
     id: "6",
     caseNumber: "CASE #006",
-    title: "Social Media Content Moderator",
+    title: "Demon Slayer Hashira Classifier and Diaglogue Generator",
     description: "AI-driven content moderation system with 95% accuracy rate",
     longDescription:
       "Developed an intelligent content moderation system using natural language processing and computer vision to automatically detect and filter inappropriate content.",
     technologies: ["Python", "TensorFlow", "OpenCV", "Flask", "Redis", "PostgreSQL"],
     status: "Active",
-    difficulty: "Medium",
-    image: "/content-moderation-ai-interface.jpg",
+    difficulty: "Project",
+    image: "/rengoku.jpg",
     challenges: [
       "Handling multiple content types (text, images, videos)",
       "Minimizing false positives while catching violations",
@@ -168,13 +168,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
   const statusColors = {
     Solved: "bg-green-500/20 text-green-400 border-green-500/30",
     Active: "bg-primary/20 text-primary border-primary/30",
-    Classified: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+    // Classified: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
   }
 
   const difficultyColors = {
     High: "bg-red-500/20 text-red-400",
     Medium: "bg-yellow-500/20 text-yellow-400",
     Low: "bg-green-500/20 text-green-400",
+    Publication: "bg-red-500/20 text-red-400",
+    Project: "bg-yellow-500/20 text-yellow-400"
   }
 
   return (
@@ -307,7 +309,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 }
 
 export function ProjectsSection() {
-  const [filter, setFilter] = useState<"All" | "Solved" | "Active" | "Classified">("All")
+  const [filter, setFilter] = useState<"All" | "Solved" | "Active">("All")
 
   const filteredProjects = filter === "All" ? projects : projects.filter((project) => project.status === filter)
 
@@ -326,7 +328,7 @@ export function ProjectsSection() {
 
         {/* Filter Buttons */}
         <div className="flex justify-center space-x-4 mb-12">
-          {["All", "Solved", "Active", "Classified"].map((status) => (
+          {["All", "Solved", "Active"].map((status) => (
             <Button
               key={status}
               onClick={() => setFilter(status as any)}
