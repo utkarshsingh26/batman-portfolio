@@ -30,14 +30,21 @@ const BatSignal = ({ isActive }: { isActive: boolean }) => (
         isActive ? "bat-signal-animation text-shadow-glow" : ""
       }`}
     >
-      <svg
+      {/* <svg
         width="120"
         height="120"
         viewBox="0 0 100 100"
         className={`fill-primary transition-all duration-1000 ${isActive ? "drop-shadow-2xl" : ""}`}
       >
         <path d="M50 15c-12 0-22 4-30 12-4 4-7 10-7 16 0 3 1 6 3 8l12-4c3-1 6-2 9-2s6 1 9 2l12 4c2-2 3-5 3-8 0-6-3-12-7-16-8-8-18-12-30-12zm-35 35c-4 3-7 8-7 13 0 4 2 8 4 11l18-7c4-2 9-3 15-3s11 1 15 3l18 7c2-3 4-7 4-11 0-5-3-10-7-13l-12 4c-4 2-10 3-15 3s-11-1-15-3l-12-4zm20 25c-2 1-4 3-4 5 0 1 0 2 1 3l8-3c2-1 4-1 6-1s4 0 6 1l8 3c1-1 1-2 1-3 0-2-2-4-4-5l-4 1c-2 1-4 1-6 1s-4 0-6-1l-4-1z" />
-      </svg>
+      </svg> */}
+        <img
+      src="/batman-logo.png" // put your image in /public and use its filename
+      alt="Bat Signal"
+      className={`w-28 h-28 object-contain transition-all duration-1000 ${
+        isActive ? "scale-110 drop-shadow-2xl" : "group-hover:scale-105"
+      }`}
+    />
     </div>
 
     {/* Name in Bat Signal */}
@@ -108,8 +115,8 @@ export function HeroSection() {
 
         {/* Subtitle */}
         <div className="mb-12">
-          <p className="font-source-sans text-xl md:text-2xl text-muted-foreground mb-2">Software Engineer</p>
-          <p className="font-playfair text-2xl md:text-3xl text-foreground font-bold">Dark Knight of Code</p>
+          <p className="font-source-sans text-xl md:text-2xl text-muted-foreground mb-2">Software Engineer by Day</p>
+          <p className="font-playfair text-2xl md:text-3xl text-foreground font-bold">Vigilante by Night</p>
         </div>
 
         {/* Call to Action */}

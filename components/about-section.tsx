@@ -4,25 +4,40 @@ import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
+// const BatmanSilhouette = () => (
+//   <div className="relative">
+//     <svg
+//       width="300"
+//       height="400"
+//       viewBox="0 0 300 400"
+//       className="fill-primary/20 hover:fill-primary/30 transition-colors duration-500"
+//     >
+//       {/* Batman silhouette */}
+//       <path d="M150 50c-20 0-35 10-45 25-5 8-8 18-8 28 0 15 8 28 20 35v30c0 20 15 35 35 35s35-15 35-35v-30c12-7 20-20 20-35 0-10-3-20-8-28-10-15-25-25-45-25z" />
+//       <path d="M150 180c-25 0-45 20-45 45v80c0 15 10 25 25 25h40c15 0 25-10 25-25v-80c0-25-20-45-45-45z" />
+//       <path d="M100 200c-15 0-25 10-25 25v50c0 10 8 18 18 18s18-8 18-18v-50c0-15-10-25-25-25z" />
+//       <path d="M200 200c15 0 25 10 25 25v50c0 10-8 18-18 18s-18-8-18-18v-50c0 15 10-25 25-25z" />
+//       {/* Cape */}
+//       <path d="M80 180c-20 30-30 60-25 90 5 25 20 40 40 45 15 3 30 0 40-8 10 8 25 11 40 8 20-5 35-20 40-45 5-30-5-60-25-90-10-15-25-25-40-25s-30 10-35 25c-5-15-20-25-35-25s-30 10-40 25z" />
+//     </svg>
+//     <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent rounded-full blur-xl" />
+//   </div>
+// )
+
 const BatmanSilhouette = () => (
   <div className="relative">
-    <svg
-      width="300"
-      height="400"
-      viewBox="0 0 300 400"
-      className="fill-primary/20 hover:fill-primary/30 transition-colors duration-500"
-    >
-      {/* Batman silhouette */}
-      <path d="M150 50c-20 0-35 10-45 25-5 8-8 18-8 28 0 15 8 28 20 35v30c0 20 15 35 35 35s35-15 35-35v-30c12-7 20-20 20-35 0-10-3-20-8-28-10-15-25-25-45-25z" />
-      <path d="M150 180c-25 0-45 20-45 45v80c0 15 10 25 25 25h40c15 0 25-10 25-25v-80c0-25-20-45-45-45z" />
-      <path d="M100 200c-15 0-25 10-25 25v50c0 10 8 18 18 18s18-8 18-18v-50c0-15-10-25-25-25z" />
-      <path d="M200 200c15 0 25 10 25 25v50c0 10-8 18-18 18s-18-8-18-18v-50c0 15 10-25 25-25z" />
-      {/* Cape */}
-      <path d="M80 180c-20 30-30 60-25 90 5 25 20 40 40 45 15 3 30 0 40-8 10 8 25 11 40 8 20-5 35-20 40-45 5-30-5-60-25-90-10-15-25-25-40-25s-30 10-35 25c-5-15-20-25-35-25s-30 10-40 25z" />
-    </svg>
+    {/* Batman PNG */}
+    <img
+      src="/batman.webp" // replace with your PNG path or URL
+      alt="Batman Silhouette"
+      className="w-[300px] h-[400px] object-contain opacity-80 hover:opacity-100 transition-opacity duration-500"
+    />
+
+    {/* Glow effect */}
     <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent rounded-full blur-xl" />
   </div>
-)
+);
+
 
 const SkillIcon = ({ name, icon }: { name: string; icon: string }) => (
   <div className="group flex flex-col items-center p-4 rounded-lg bg-card/50 hover:bg-card transition-colors duration-300 hover:scale-105 transform">
@@ -95,10 +110,10 @@ export function AboutSection() {
           <div className="lg:col-span-2 flex justify-center">
             <div className="relative">
               <BatmanSilhouette />
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
-                <Badge variant="outline" className="font-source-sans text-primary border-primary">
-                  Dark Knight Developer
-                </Badge>
+              <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                {/* <Badge variant="outline" className="font-source-sans text-primary border-primary">
+                  The Dark Knight
+                </Badge> */}
               </div>
             </div>
           </div>

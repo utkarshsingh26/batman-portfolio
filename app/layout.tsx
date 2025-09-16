@@ -19,7 +19,7 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   title: "Utkarsh Singh | Dark Knight Developer",
-  description: "Software Engineer Portfolio - Dark Knight of Code",
+  description: "Software Engineer Portfolio - ode",
   generator: "v0.app",
   keywords: ["Software Engineer", "Developer", "Portfolio", "Utkarsh Singh"],
   authors: [{ name: "Utkarsh Singh" }],

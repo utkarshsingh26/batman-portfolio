@@ -52,16 +52,14 @@ const BatSignalButton = ({ isActive, onClick }: { isActive: boolean; onClick: ()
           isActive ? "bg-primary/20 border-primary shadow-2xl" : "hover:bg-primary/10 hover:border-primary/80"
         }`}
       >
-        <svg
-          width="60"
-          height="60"
-          viewBox="0 0 100 100"
-          className={`fill-primary transition-all duration-500 ${
-            isActive ? "text-shadow-glow scale-110" : "group-hover:scale-105"
-          }`}
-        >
-          <path d="M50 15c-12 0-22 4-30 12-4 4-7 10-7 16 0 3 1 6 3 8l12-4c3-1 6-2 9-2s6 1 9 2l12 4c2-2 3-5 3-8 0-6-3-12-7-16-8-8-18-12-30-12zm-35 35c-4 3-7 8-7 13 0 4 2 8 4 11l18-7c4-2 9-3 15-3s11 1 15 3l18 7c2-3 4-7 4-11 0-5-3-10-7-13l-12 4c-4 2-10 3-15 3s-11-1-15-3l-12-4z" />
-        </svg>
+      <img
+        src="/batman-logo.png" // your PNG path in public/ folder
+        alt="Bat Signal"
+        className={`w-16 h-16 object-contain transition-all duration-500 ${
+          isActive ? "scale-110 drop-shadow-[0_0_10px_rgba(255,255,0,0.8)]" : "group-hover:scale-105"
+        }`}
+      />
+
       </div>
       <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
         <span className="font-source-sans text-sm text-muted-foreground">
