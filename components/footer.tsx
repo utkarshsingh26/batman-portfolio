@@ -106,13 +106,14 @@ export function Footer() {
             </Button>
             <div className="flex space-x-4 text-sm">
               <a
-                href="/privacy"
+                href="https://www.dc.com/characters/batman"
+                target="_blank"
                 className="font-source-sans text-muted-foreground hover:text-primary transition-colors"
               >
                 Privacy Policy
               </a>
               <span className="text-muted-foreground">•</span>
-              <a href="/terms" className="font-source-sans text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.dc.com/characters/batman" target="_blank" className="font-source-sans text-muted-foreground hover:text-primary transition-colors">
                 Terms of Service
               </a>
             </div>
