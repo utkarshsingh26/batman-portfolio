@@ -91,7 +91,7 @@ const ExperienceCard = ({
 }: { experience: Experience; isExpanded: boolean; onToggle: () => void }) => {
   const missionTypeColors = {
     Stealth: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-    Tactical: "bg-primary/20 text-primary border-primary/30",
+    Tactical: "bg-red-500/20 text-red-400 border-red-500/30",
     Strategic: "bg-green-500/20 text-green-400 border-green-500/30",
   }
 

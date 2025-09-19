@@ -11,20 +11,20 @@
   --card-foreground: #ffffff; /* Card text color */
   --popover: #f2f2f2; /* Light background for popover elements */
   --popover-foreground: #333333; /* Dark text for popover */
-  --primary: #ec4899; /* Accent color for buttons and highlights */
+  --primary: #facc15; /* Accent color for buttons and highlights  [HERE'S THE PREVIOUS PINK: #ec4899]*/ 
   --primary-foreground: #ffffff; /* Text color for primary buttons */
   --secondary: #f2f2f2; /* Secondary background for sections */
   --secondary-foreground: #333333; /* Secondary text color */
   --muted: #474747; /* Muted text for less emphasis */
   --muted-foreground: #f2f2f2; /* Muted text color */
-  --accent: #ec4899; /* Bat-signal pink for CTA elements */
+  --accent: #facc15; /* Bat-signal pink for CTA elements */
   --accent-foreground: #ffffff; /* Text color for accent elements */
   --destructive: #be123c; /* Red for error messages */
   --destructive-foreground: #ffffff; /* Text color for error messages */
   --border: #333333; /* Borders for cards and sections */
   --input: #ffffff; /* Input field background */
-  --ring: #ec4899; /* Focus ring color for inputs and buttons */
-  --chart-1: #ec4899; /* Chart color for data visualizations */
+  --ring: #facc15; /* Focus ring color for inputs and buttons */
+  --chart-1: #facc15; /* Chart color for data visualizations */
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
@@ -34,10 +34,10 @@
   --sidebar-foreground: #ffffff; /* Text color for sidebar */
   --sidebar-primary: #333333; /* Primary sidebar background */
   --sidebar-primary-foreground: #ffffff; /* Text color for sidebar items */
-  --sidebar-accent: #ec4899; /* Sidebar accent color */
+  --sidebar-accent: #facc15; /* Sidebar accent color */
   --sidebar-accent-foreground: #ffffff; /* Text color for sidebar accents */
   --sidebar-border: #333333; /* Border for sidebar elements */
-  --sidebar-ring: #ec4899; /* Focus ring for sidebar items */
+  --sidebar-ring: #facc15; /* Focus ring for sidebar items */
 }
 
 .dark {
@@ -47,20 +47,20 @@
   --card-foreground: #ffffff;
   --popover: #f2f2f2;
   --popover-foreground: #333333;
-  --primary: #ec4899;
+  --primary: #facc15;
   --primary-foreground: #ffffff;
   --secondary: #f2f2f2;
   --secondary-foreground: #333333;
   --muted: #474747;
   --muted-foreground: #f2f2f2;
-  --accent: #ec4899;
+  --accent: #facc15;
   --accent-foreground: #ffffff;
   --destructive: #be123c;
   --destructive-foreground: #ffffff;
   --border: #333333;
   --input: #ffffff;
-  --ring: #ec4899;
-  --chart-1: #ec4899;
+  --ring: #facc15;
+  --chart-1: #facc15;
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
@@ -69,10 +69,10 @@
   --sidebar-foreground: #ffffff;
   --sidebar-primary: #333333;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #ec4899;
+  --sidebar-accent: #facc15;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #333333;
-  --sidebar-ring: #ec4899;
+  --sidebar-ring: #facc15;
 }
 
 @theme inline {
@@ -149,10 +149,10 @@
 @keyframes glow {
   0%,
   100% {
-    box-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899;
+    box-shadow: 0 0 5px #facc15, 0 0 10px #facc15;
   }
   50% {
-    box-shadow: 0 0 20px #ec4899, 0 0 30px #ec4899, 0 0 40px #ec4899;
+    box-shadow: 0 0 20px #facc15, 0 0 30px #facc15, 0 0 40px #facc15;
   }
 }
 
@@ -186,7 +186,7 @@
 }
 
 .text-shadow-glow {
-  text-shadow: 0 0 10px #ec4899, 0 0 20px #ec4899, 0 0 30px #ec4899, 0 0 40px #ec4899;
+  text-shadow: 0 0 10px #facc15, 0 0 20px #facc15, 0 0 30px #facc15, 0 0 40px #facc15;
 }
 
 /* Added gradient utilities for hero section */

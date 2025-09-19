@@ -78,7 +78,7 @@ export function Navigation() {
           <button onClick={() => scrollToSection("hero")} className="flex items-center space-x-2 group">
             <BatSymbol />
             <span className="font-playfair font-bold text-xl text-foreground group-hover:text-primary transition-colors">
-              UTKARSH
+              UTKARSH SINGH/BATMAN
             </span>
           </button>
 

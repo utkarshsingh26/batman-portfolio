@@ -68,8 +68,8 @@ const education: Education[] = [
 const EducationCard = ({ edu }: { edu: Education }) => {
   const classificationColors = {
     "Top Secret": "bg-red-500/20 text-red-400 border-red-500/30",
-    Classified: "bg-primary/20 text-primary border-primary/30",
-    Confidential: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+    "Classified": "bg-purple-500/20 text-purple-400 border-purple-500/30",
+    "Confidential": "bg-purple-500/20 text-yellow-400 border-yellow-500/30",
   }
 
   return (
