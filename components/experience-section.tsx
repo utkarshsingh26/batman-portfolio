@@ -18,11 +18,26 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
+  // {
+  //   id: "1",
+  //   company: "Lifespan Digital Health",
+  //   position: "Software Engineer (Full Stack)",
+  //   duration: "October 2024 - Present",
+  //   location: "Tempe, AZ",
+  //   description:
+  //     "TBA: [
+  //     "TBA",
+  //     "TBA",
+  //     "TBA",
+  //   ],
+  //   technologies: ["TBA", "TBA", "TBA", "TBA", "TBA", "TBA"],
+  //   missionType: "Top Secret",
+  // },
   {
-    id: "1",
+    id: "1", /** Make it 2 on Oct 1st **/
     company: "Arizona State University",
     position: "Software Engineer",
-    duration: " July 2024 - Present",
+    duration: "July 2024 - Present", /** Make it July 2024 - September 2024 **/
     location: "Tempe, AZ",
     description:
       "Leading the design, development, and testing of next-generation healthcare enterprise solutions, architecting scalable systems that can serve millions of users worldwide.",
@@ -35,7 +50,7 @@ const experiences: Experience[] = [
     missionType: "Strategic",
   },
   {
-    id: "2",
+    id: "2", /** Make it 3 on Oct 1st **/
     company: "Resilience, Inc",
     position: "Software Engineer Intern",
     duration: "May 2024 - July 2024",
@@ -51,7 +66,7 @@ const experiences: Experience[] = [
     missionType: "Tactical",
   },
   {
-    id: "3",
+    id: "3", /** Make it 4 on Oct 1st **/
     company: "Jio Platforms Ltd",
     position: "Software Engineer",
     duration: "June 2021 - Feb 2023",
@@ -68,7 +83,7 @@ const experiences: Experience[] = [
     missionType: "Stealth",
   },
   {
-    id: "4",
+    id: "4", /** Make it 5 on Oct 1st **/
     company: "Cognizant",
     position: "Application Development Intern",
     duration: "Jan 2021 - May 2021",
