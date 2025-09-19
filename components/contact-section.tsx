@@ -143,7 +143,7 @@ export function ContactSection() {
               <div className="text-center mb-8">
                 <h3 className="font-playfair font-bold text-2xl text-primary mb-2">Emergency Communication</h3>
                 <p className="font-source-sans text-muted-foreground">
-                  Transmit your message through the secure Bat-Network
+                  Transmit your message through the secure Bat-Network (won't work unless you're Jim Gordon)
                 </p>
               </div>
 
